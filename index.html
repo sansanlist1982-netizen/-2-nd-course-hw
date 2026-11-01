@@ -24,10 +24,34 @@
 
     <!-- Иллюстрации -->
     <img src="img/illustration-1.svg" alt="Декоративная иллюстрация" class="hero-page__illustration-1" loading="lazy">
+    <img src="img/illustration-1a.svg" alt="Декоративная иллюстрация" class="hero-page__illustration-1a" loading="lazy">
     <img src="img/illustration-2.png" alt="Декоративная иллюстрация" class="hero-page__illustration-2" loading="lazy">
     <img src="img/illustration-3.png" alt="Декоративная иллюстрация" class="hero-page__illustration-3" loading="lazy">
     <img src="img/illustration-4.png" alt="Декоративная иллюстрация" class="hero-page__illustration-4" loading="lazy">
     <img src="img/illustration-5.png" alt="Декоративная иллюстрация" class="hero-page__illustration-5" loading="lazy">
+    <!-- Анимированная бесконечная лента -->
+<div class="marquee-ticker">
+  <div class="marquee-ticker__track">
+    <!-- Первый набор (оригинал) -->
+    <div class="marquee-ticker__content">
+      <span>ВИКТОРИНА</span> <span class="marquee-ticker__star">✦</span>
+      <span>УГАДАЙ ЧИСЛО</span> <span class="marquee-ticker__star">✦</span>
+      <span>ПЕРЕВЕРНИ ТЕКСТ</span> <span class="marquee-ticker__star">✦</span>
+      <span>ПРОСТАЯ АРИФМЕТИКА</span> <span class="marquee-ticker__star">✦</span>
+      <span>КАМЕНЬ, НОЖНИЦЫ, БУМАГА</span> <span class="marquee-ticker__star">✦</span>
+      <span>ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</span> <span class="marquee-ticker__star">✦</span>
+    </div>
+    <!-- Второй набор (дубликат для бесшовности) -->
+    <div class="marquee-ticker__content" aria-hidden="true">
+      <span>ВИКТОРИНА</span> <span class="marquee-ticker__star">✦</span>
+      <span>УГАДАЙ ЧИСЛО</span> <span class="marquee-ticker__star">✦</span>
+      <span>ПЕРЕВЕРНИ ТЕКСТ</span> <span class="marquee-ticker__star">✦</span>
+      <span>ПРОСТАЯ АРИФМЕТИКА</span> <span class="marquee-ticker__star">✦</span>
+      <span>КАМЕНЬ, НОЖНИЦЫ, БУМАГА</span> <span class="marquee-ticker__star">✦</span>
+      <span>ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</span> <span class="marquee-ticker__star">✦</span>
+    </div>
+  </div>
+</div>
   </section>
 
   <section class="about-games" id="about-games">
@@ -43,8 +67,8 @@
         них может поиграть каждый.<br> Все игры доступны для пользования.</p>
 
       <div class="games-grid__container">
-        <!-- Карточка 1 (Исправлен тег контента и src) -->
-        <a href="#" class="games-card">
+        <!-- Карточка 1  -->
+        <a href="#game-guess" class="games-card">
           <div class="games-card__content">
             <div class="games-card__bg"></div>
             <p class="games-card__number">Игра № 1</p>
@@ -53,7 +77,7 @@
         </a>
 
         <!-- Карточка 2 -->
-        <a href="#" class="games-card">
+        <a href="#game-rps" class="games-card">
           <div class="games-card__content">
             <div class="games-card__bg"></div>
             <p class="games-card__number">Игра № 4</p>
@@ -62,7 +86,7 @@
         </a>
 
         <!-- Карточка 3 -->
-        <a href="#" class="games-card">
+        <a href="#game-math" class="games-card">
           <div class="games-card__content">
             <div class="games-card__bg"></div>
             <p class="games-card__number">Игра № 2</p>
@@ -71,7 +95,7 @@
         </a>
 
         <!-- Карточка 4 -->
-        <a href="#" class="games-card">
+        <a href="#game-quiz" class="games-card">
           <div class="games-card__content">
             <div class="games-card__bg"></div>
             <p class="games-card__number">Игра № 5</p>
@@ -80,7 +104,7 @@
         </a>
 
         <!-- Карточка 5 -->
-        <a href="#" class="games-card">
+        <a href="#game-reverse" class="games-card">
           <div class="games-card__content">
             <div class="games-card__bg"></div>
             <p class="games-card__number">Игра № 3</p>
@@ -89,7 +113,7 @@
         </a>
 
         <!-- Карточка 6 -->
-        <a href="#" class="games-card">
+        <a href="#game-color" class="games-card">
           <div class="games-card__content">
             <div class="games-card__bg"></div>
             <p class="games-card__number">Игра № 6</p>
@@ -99,6 +123,89 @@
       </div>
     </div>
   </section>
+<section  class="mini-games center">
+  <h1 class="mini-games__title">Мини-игры</h1>
+  <div class="mini-games__grid">
+<!-- Иллюстрации -->
+    <img src="img/illustration-9.svg" alt="Декоративная иллюстрация" class="mini-games__illustration-9" loading="lazy">
+    <img src="img/illustration-10.svg" alt="Декоративная иллюстрация" class="mini-games__illustration-10" loading="lazy">
+    <img src="img/illustration-11.svg" alt="Декоративная иллюстрация" class="mini-games__illustration-11" loading="lazy">
+    <img src="img/illustration-12.svg" alt="Декоративная иллюстрация" class="mini-games__illustration-12" loading="lazy">
+<!-- Карточка 1: Угадай число -->
+    <article class="mini-games__card" id="game-guess">
+      <div class="mini-games__info">
+        <h3 class="mini-games__card-title">Угадай число</h3>
+        <p class="mini-games__card-description">Попробуй угадать случайное число от 1 до 100.</p>
+        <a href="#" class="mini-games__card-btn">Играть!</a>
+      </div>
+      <div class="mini-games__preview">
+        <img src="img/games1.png" alt="Угадай число" class="mini-games__img">
+        
+      </div>
+    </article>
+
+    <!-- Карточка 2: Простая арифметика -->
+    <article class="mini-games__card" id="game-math">
+      <div class="mini-games__info">
+        <h3 class="mini-games__card-title">Простая арифметика</h3>
+        <p class="mini-games__card-description">Попробуй решить простые арифметические задачи.</p>
+        <a href="#" class="mini-games__card-btn">Играть!</a>
+      </div>
+      <div class="mini-games__preview">
+        <img src="img/games2.png" alt="Угадай число" class="mini-games__img">
+      </div>
+    </article>
+
+    <!-- Карточка 3: Переверни текст -->
+    <article class="mini-games__card" id="game-reverse">
+      <div class="mini-games__info">
+        <h3 class="mini-games__card-title">Переверни текст</h3>
+        <p class="mini-games__card-description">Попробуй ввести текст, который будет перевернут.</p>
+        <a href="#" class="mini-games__card-btn">Играть!</a>
+      </div>
+      <div class="mini-games__preview">
+        <img src="img/games3.png" alt="Угадай число" class="mini-games__img">
+      </div>
+    </article>
+
+    <!-- Карточка 4: Камень, ножницы, бумага -->
+    <article class="mini-games__card" id="game-rps">
+      <div class="mini-games__info">
+        <h3 class="mini-games__card-title">Камень,<br> ножницы,<br> бумага</h3>
+        <p class="mini-games__card-description">Сыграй в популярную игру против компьютера.</p>
+        <a href="#" class="mini-games__card-btn">Играть!</a>
+      </div>
+      <div class="mini-games__preview">
+        <img src="img/games4.png" alt="Угадай число" class="mini-games__img">
+      </div>
+    </article>
+
+    <!-- Карточка 5: Простая викторина -->
+    <article class="mini-games__card" id="game-quiz">
+      <div class="mini-games__info">
+        <h3 class="mini-games__card-title">Простая викторина</h3>
+        <p class="mini-games__card-description">Отвечай на вопросы викторины<br> с вариантами ответов.</p>
+        <a href="#" class="mini-games__card-btn">Играть!</a>
+      </div>
+      <div class="mini-games__preview">
+        <img src="img/games5.png" alt="Угадай число" class="mini-games__img">
+      </div>
+    </article>
+
+    <!-- Карточка 6: Генератор случайных цветов -->
+    <article class="mini-games__card" id="game-color">
+      <div class="mini-games__info">
+        <h3 class="mini-games__card-title">Генератор случайных<br> цветов</h3>
+        <p class="mini-games__card-description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+        <a href="#" class="mini-games__card-btn">Играть!</a>
+      </div>
+      <div class="mini-games__preview ">
+        <img src="img/games6.png" alt="Угадай число" class="mini-games__img">
+      </div>
+    </article>
+  </div>
+</section>
+
 
   <footer class="footer center">
     <p> Все права защищены.</p>
