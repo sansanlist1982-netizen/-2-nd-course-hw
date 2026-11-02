@@ -4,9 +4,9 @@
    МОБИЛЬНЫЙ АДАПТИВ ОТ 376px ДО 767px ДЛЯ ВСЕХ СТРАНИЦ САЙТА
    ========================================================================== */
 
-@media screen and (min-width: 376px) and (max-width: 767px) {
+@media screen and (min-width: 250px) and (max-width: 767px) {
   
-  /* 1. Общие контейнеры и базовые отступы безопасности */
+
   .center {
     padding-left: 16px ;  
     padding-right: 16px ;
@@ -23,7 +23,7 @@
 
   
   .hero-page__content,
-  .hero-page__subtitle, {
+  .hero-page__subtitle {
     width: 100% ;
     max-width: 100% ;
     margin-left: 0 ;
@@ -44,6 +44,7 @@
 .hero-page__content {
   text-align: center; 
   max-width: 700px;
+
   width: 100%;
   z-index: 2;
   display: flex;
@@ -52,7 +53,7 @@
 }
 
   .hero-page__title {
-    min-width: 262px;
+    min-width: 250px;
     font-size: 40px ;      
     line-height:100% ;
     margin-top: 147px ;
@@ -60,7 +61,7 @@
   }
 
   .hero-page__subtitle {
-    min-width: 296px;
+    min-width: 250px;
     font-size: 18px ;       
     line-height: 100% ;
     margin-top: 24px ;
