@@ -649,10 +649,9 @@ body {
   }
 }
 /* ==========================================================================
-   МОБИЛЬНЫЙ АДАПТИВ ОТ 376px ДО 767px ДЛЯ ВСЕХ СТРАНИЦ САЙТА
+   МОБИЛЬНЫЙ АДАПТИВ ОТ 250px ДО 767px 
    ========================================================================== */
-@media screen and (min-width: 376px) and (max-width: 767px) {
-  /* 1. Общие контейнеры и базовые отступы безопасности */
+@media screen and (min-width: 250px) and (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -691,14 +690,14 @@ body {
     align-items: center;
   }
   .hero-page__title {
-    min-width: 262px;
+    min-width: 250px;
     font-size: 40px;
     line-height: 100%;
     margin-top: 147px;
     z-index: 3;
   }
   .hero-page__subtitle {
-    min-width: 296px;
+    min-width: 250px;
     font-size: 18px;
     line-height: 100%;
     margin-top: 24px;
