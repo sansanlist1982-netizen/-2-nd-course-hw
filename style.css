@@ -318,7 +318,7 @@ body {
 }
 
 .games-card:nth-child(6) {
-  height: 512px;
+  height: 551px;
 }
 
 /* Иллюстрация  */
@@ -412,7 +412,7 @@ body {
   font-size: 64px;
   font-weight: 700;
   color: #ffffff;
-  margin-top: 92px;
+  margin-top: 41px;
   margin-bottom: 72px;
 }
 
