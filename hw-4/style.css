@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #202027;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.header__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.header__subtitle {
+  font-size: 18px;
+  color: #b3b3b3;
+  font-weight: 400;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.tasks-btn {
+  background-color: #ffffff;
+  color: #202027;
+  border: 2px solid transparent;
+  padding: 24px 16px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: inherit;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.tasks-btn span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6c727f;
+}
+
+.tasks-btn:hover {
+  background-color: #BCEC30;
+  color: #202027;
+  transform: translateY(-4px);
+  border-color: #ffffff;
+}
+
+.tasks-btn:hover span {
+  color: #202027;
+}
+
+@media (max-width: 480px) {
+  .header__title {
+    font-size: 32px;
+  }
+  .header__subtitle {
+    font-size: 15px;
+  }
+  .tasks-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
