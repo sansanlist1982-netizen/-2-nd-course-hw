@@ -43,9 +43,25 @@ function runQuiz() {
     for (let i = 0; i < quiz.length; i++) {
         const item = quiz[i];
         const text = `Вопрос ${i + 1}.\n${wrapText(item.question, 22)}\n\n${item.options.join("\n")}\n\nВведите номер:`;
-        const answer = prompt(text);
+        let answer;
 
-        if (Number(answer) === item.correctAnswer) {
+        while (answer === undefined) {
+            const input = prompt(text);
+
+            if (input === null) {
+                alert('Викторина остановлена.');
+                return;
+            }
+
+            const number = Number(input.trim());
+            if (Number.isInteger(number) && number >= 1 && number <= item.options.length) {
+                answer = number;
+            } else {
+                alert(`Некорректный ответ. Введите номер варианта от 1 до ${item.options.length}.`);
+            }
+        }
+
+        if (answer === item.correctAnswer) {
             correctCount++;
         }
     }
