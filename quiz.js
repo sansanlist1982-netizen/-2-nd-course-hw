@@ -17,13 +17,32 @@ const quiz = [
     }
 ];
 
+// Переносит строку по словам, чтобы окно prompt/alert не выходило за пределы экрана
+function wrapText(text, limit) {
+    const lines = [];
+    let line = "";
+
+    for (const word of text.split(" ")) {
+        const candidate = line ? line + " " + word : word;
+        if (line && candidate.length > limit) {
+            lines.push(line);
+            line = word;
+        } else {
+            line = candidate;
+        }
+    }
+
+    lines.push(line);
+    return lines.join("\n");
+}
+
 // Проходит викторину: спрашивает ответ на каждый вопрос и показывает счёт
 function runQuiz() {
     let correctCount = 0;
 
     for (let i = 0; i < quiz.length; i++) {
         const item = quiz[i];
-        const text = `Вопрос ${i + 1}. ${item.question}\n\n${item.options.join("\n")}\n\nВведите номер ответа:`;
+        const text = `Вопрос ${i + 1}.\n${wrapText(item.question, 22)}\n\n${item.options.join("\n")}\n\nВведите номер:`;
         const answer = prompt(text);
 
         if (Number(answer) === item.correctAnswer) {
